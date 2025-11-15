@@ -30,3 +30,11 @@ set(FACTORY_METHOD_SOURCES
 )
 add_executable(factory_method_demo ${FACTORY_METHOD_SOURCES})
 target_include_directories(factory_method_demo PRIVATE creational/factory_method)
+
+# Abstract Factory Pattern
+set(ABSTRACT_FACTORY_SOURCES
+    creational/abstract_factory/abstract_factory.cpp
+    creational/abstract_factory/demo.cpp
+)
+add_executable(abstract_factory_demo ${ABSTRACT_FACTORY_SOURCES})
+target_include_directories(abstract_factory_demo PRIVATE creational/abstract_factory)
