@@ -38,3 +38,11 @@ set(ABSTRACT_FACTORY_SOURCES
 )
 add_executable(abstract_factory_demo ${ABSTRACT_FACTORY_SOURCES})
 target_include_directories(abstract_factory_demo PRIVATE creational/abstract_factory)
+
+# Builder Pattern
+set(BUILDER_SOURCES
+    creational/builder/builder.cpp
+    creational/builder/demo.cpp
+)
+add_executable(builder_demo ${BUILDER_SOURCES})
+target_include_directories(builder_demo PRIVATE creational/builder)
