@@ -5,7 +5,6 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-
 # Singleton Pattern
 set(SINGLETON_SOURCES
     creational/singleton/singleton.cpp
@@ -46,3 +45,11 @@ set(BUILDER_SOURCES
 )
 add_executable(builder_demo ${BUILDER_SOURCES})
 target_include_directories(builder_demo PRIVATE creational/builder)
+
+# Prototype Pattern
+set(PROTOTYPE_SOURCES
+    creational/prototype/prototype.cpp
+    creational/prototype/demo.cpp
+)
+add_executable(prototype_demo ${PROTOTYPE_SOURCES})
+target_include_directories(prototype_demo PRIVATE creational/prototype)
