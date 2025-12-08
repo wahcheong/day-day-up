@@ -53,3 +53,11 @@ set(PROTOTYPE_SOURCES
 )
 add_executable(prototype_demo ${PROTOTYPE_SOURCES})
 target_include_directories(prototype_demo PRIVATE creational/prototype)
+
+# Adapter Pattern
+set(ADAPTER_SOURCES
+    structural/adapter/adapter.cpp
+    structural/adapter/demo.cpp
+)
+add_executable(adapter_demo ${ADAPTER_SOURCES})
+target_include_directories(adapter_demo PRIVATE structural/adapter)
