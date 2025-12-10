@@ -61,3 +61,11 @@ set(ADAPTER_SOURCES
 )
 add_executable(adapter_demo ${ADAPTER_SOURCES})
 target_include_directories(adapter_demo PRIVATE structural/adapter)
+
+# Bridge Pattern
+set(BRIDGE_SOURCES
+    structural/bridge/bridge.cpp
+    structural/bridge/demo.cpp
+)
+add_executable(bridge_demo ${BRIDGE_SOURCES})
+target_include_directories(bridge_demo PRIVATE structural/bridge)
