@@ -1,0 +1,7 @@
+name: daydayup
+channels:
+  - conda-forge
+dependencies:
+  - scipy
+  - numpy
+  - matplotlib

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "planning"
+version = "0.1.0"
+description = "A Python package for planning algorithms."
+requires-python = ">=3.9"
+
+dependencies = [
+    "scipy>=1.7",
+    "numpy>=1.20",
+    "matplotlib>=3.4",
+    "ruff>=0.15.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
